@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Rakhis by Payal – Bulk Collection 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--red:#9B1C1C;--mg:#E8832A;--ivory:#FDF6ED;--blush:#F7E8D8;--thread:#C8603A;--ink:#2A1A0E;--muted:#7A5C48;--white:#fff;--sh:0 2px 18px rgba(42,26,14,.10)}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.6}
+
+/* HEADER */
+header{background:var(--red);color:#fff;text-align:center;padding:50px 20px 36px;position:relative;overflow:hidden}
+header::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 18px,rgba(255,255,255,.04) 18px,rgba(255,255,255,.04) 19px)}
+.badge{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--mg);border:1px solid var(--mg);padding:4px 14px;border-radius:2px;margin-bottom:16px;position:relative}
+header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,6vw,4rem);font-weight:600;margin-bottom:8px;position:relative}
+header p{font-size:13px;color:rgba(255,255,255,.7);letter-spacing:.05em;position:relative}
+.divider{color:var(--mg);font-size:1.2rem;letter-spacing:.3em;margin-top:12px;position:relative}
+
+/* TABS */
+.tabs-wrap{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:2px solid var(--blush)}
+.tabs{display:flex;justify-content:center;flex-wrap:wrap;max-width:1100px;margin:0 auto}
+.tabs a{padding:13px 16px;font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;border-bottom:3px solid transparent;transition:.2s;white-space:nowrap}
+.tabs a:hover,.tabs a.active{color:var(--red);border-bottom-color:var(--red)}
+
+/* SECTIONS */
+.sec{max-width:1100px;margin:0 auto;padding:44px 20px 16px}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;border-bottom:1px solid #e8d5c4;padding-bottom:12px}
+.sec-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,4vw,2.2rem);font-weight:600;color:var(--red)}
+.sec-head span{font-size:13px;color:var(--muted);font-style:italic}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:18px}
+@media(max-width:480px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+
+/* CARD */
+.card{background:var(--white);border-radius:10px;box-shadow:var(--sh);overflow:hidden;display:flex;flex-direction:column;transition:.18s}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 28px rgba(42,26,14,.15)}
+.card-img{aspect-ratio:1/1;overflow:hidden;background:var(--blush)}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:.3s}
+.card:hover .card-img img{transform:scale(1.05)}
+.card-body{padding:12px 14px 14px;flex:1;display:flex;flex-direction:column;gap:8px}
+.card-name{font-size:13px;font-weight:500;color:var(--ink);line-height:1.3}
+.card-desc{font-size:11px;color:var(--muted);line-height:1.4}
+.price-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.price{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:var(--thread)}
+.bulk-tag{font-size:10px;background:#fff3e0;color:#e65100;border:1px solid #ffcc80;border-radius:4px;padding:2px 7px;font-weight:500}
+.wa-btn{display:block;text-align:center;background:#25D366;color:#fff;text-decoration:none;border-radius:6px;padding:9px 10px;font-size:13px;font-weight:500;transition:.2s}
+.wa-btn:hover{background:#1ebe5d}
+.empty{color:var(--muted);font-style:italic;font-size:14px;padding:20px 0}
+
+/* BULK */
+#bulk-section{background:linear-gradient(135deg,#9B1C1C 0%,#6b1212 100%);color:#fff;padding:56px 20px;margin-top:32px}
+.bulk-inner{max-width:800px;margin:0 auto}
+.bulk-inner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,2.8rem);color:var(--mg);margin-bottom:8px}
+.bulk-inner>p{color:rgba(255,255,255,.75);font-size:14px;margin-bottom:28px}
+.bfeats{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:14px;margin-bottom:32px}
+.bf{background:rgba(255,255,255,.08);border-radius:10px;padding:18px 14px;text-align:center}
+.bf .icon{font-size:1.6rem;margin-bottom:8px}
+.bf h4{font-size:13px;font-weight:500;color:var(--mg);margin-bottom:4px}
+.bf p{font-size:12px;color:rgba(255,255,255,.65)}
+.bform{background:rgba(255,255,255,.07);border-radius:14px;padding:26px 22px}
+.bform h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#fff;margin-bottom:18px}
+.bfg{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:520px){.bfg{grid-template-columns:1fr}}
+.bfg-g{display:flex;flex-direction:column;gap:5px}
+.bfg-g label{font-size:11px;color:rgba(255,255,255,.7);font-weight:500;letter-spacing:.05em;text-transform:uppercase}
+.bfg-g input,.bfg-g select,.bfg-g textarea{border:1.5px solid rgba(255,255,255,.2);border-radius:7px;padding:10px 12px;font-size:14px;font-family:'DM Sans',sans-serif;background:rgba(255,255,255,.1);color:#fff;outline:none;transition:.2s}
+.bfg-g input::placeholder{color:rgba(255,255,255,.4)}
+.bfg-g input:focus,.bfg-g select:focus,.bfg-g textarea:focus{border-color:var(--mg)}
+.bfg-g select option{background:#6b1212}
+.bfg-g textarea{resize:vertical;min-height:72px}
+.bf-full{grid-column:1/-1}
+.wa-order-btn{display:block;width:100%;margin-top:18px;background:#25D366;color:#fff;border:none;border-radius:8px;padding:14px;font-size:15px;font-weight:500;cursor:pointer;letter-spacing:.02em;transition:.2s}
+.wa-order-btn:hover{background:#1ebe5d}
+
+/* FOOTER */
+footer{background:var(--ink);color:rgba(255,255,255,.75);text-align:center;padding:36px 20px}
+footer h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--mg);margin-bottom:14px}
+.foot-links{display:flex;justify-content:center;gap:20px;margin-bottom:14px}
+.foot-links a{color:rgba(255,255,255,.8);text-decoration:none;font-size:14px;transition:.2s}
+.foot-links a:hover{color:var(--mg)}
+footer small{font-size:12px;color:rgba(255,255,255,.35)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Handcrafted Collection 2026</div>
+  <h1>Rakhis by Payal</h1>
+  <p>Bulk Orders Welcome · Celebrate the Bond</p>
+  <div class="divider">✦ · ✦ · ✦</div>
+</header>
+
+<div class="tabs-wrap">
+  <div class="tabs">
+    <a href="#" onclick="showCat('all',this);return false" class="active">🪢 All</a>
+    <a href="#" onclick="showCat('couple',this);return false">💑 Couple</a>
+    <a href="#" onclick="showCat('bhai',this);return false">👦 Bhai</a>
+    <a href="#" onclick="showCat('bhabhi',this);return false">👩 Bhabhi</a>
+    <a href="#" onclick="showCat('kids',this);return false">🧸 Kids</a>
+    <a href="#bulk-section">📦 Bulk Order</a>
+  </div>
+</div>
+
+<div id="catalog">
+  <div class="sec" id="sec-couple"><div class="sec-head"><h2>Couple Rakhis</h2><span>Elegant matching sets for Bhaiya &amp; Bhabhi</span></div><div class="grid" id="grid-couple"></div></div>
+  <div class="sec" id="sec-bhai"><div class="sec-head"><h2>Bhai Rakhis</h2><span>Classic &amp; bold rakhis for brothers</span></div><div class="grid" id="grid-bhai"></div></div>
+  <div class="sec" id="sec-bhabhi"><div class="sec-head"><h2>Bhabhi Rakhis</h2><span>Graceful &amp; ornate rakhis for bhabhi</span></div><div class="grid" id="grid-bhabhi"></div></div>
+  <div class="sec" id="sec-kids"><div class="sec-head"><h2>Kids Rakhis</h2><span>Cute &amp; playful rakhis children love</span></div><div class="grid" id="grid-kids"></div></div>
+</div>
+
+<div id="bulk-section">
+  <div class="bulk-inner">
+    <h2>📦 Bulk Orders</h2>
+    <p>Perfect for corporates, housing societies, schools &amp; large families.</p>
+    <div class="bfeats">
+      <div class="bf"><div class="icon">🎁</div><h4>Min 10 Pieces</h4><p>Flat bulk pricing on all categories</p></div>
+      <div class="bf"><div class="icon">🚚</div><h4>Pan-India Shipping</h4><p>Delivered to your doorstep</p></div>
+      <div class="bf"><div class="icon">🎨</div><h4>Custom Options</h4><p>Logo, colour &amp; design tweaks</p></div>
+      <div class="bf"><div class="icon">💬</div><h4>WhatsApp Support</h4><p>Direct response within hours</p></div>
+    </div>
+    <div class="bform">
+      <h3>Place a Bulk Order</h3>
+      <div class="bfg">
+        <div class="bfg-g"><label>Your Name *</label><input type="text" id="b-name" placeholder="Priya Sharma"/></div>
+        <div class="bfg-g"><label>Phone / WhatsApp *</label><input type="tel" id="b-phone" placeholder="+91 98765 43210"/></div>
+        <div class="bfg-g"><label>Category *</label>
+          <select id="b-cat">
+            <option value="">— Select —</option>
+            <option>Couple Rakhis</option><option>Bhai Rakhis</option>
+            <option>Bhabhi Rakhis</option><option>Kids Rakhis</option>
+            <option>Mixed / Multiple</option>
+          </select>
+        </div>
+        <div class="bfg-g"><label>Quantity *</label><input type="number" id="b-qty" placeholder="e.g. 50" min="10"/></div>
+        <div class="bfg-g bf-full"><label>Additional Notes</label><textarea id="b-notes" placeholder="Specific designs, delivery date, city..."></textarea></div>
+      </div>
+      <button class="wa-order-btn" onclick="sendBulkOrder()">📲 Send Bulk Order on WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <h3>Celebrate the Bond</h3>
+  <div class="foot-links">
+    <a href="https://wa.me/919537318541" target="_blank">📲 WhatsApp</a>
+    <a href="https://instagram.com/rakhis_by_payal" target="_blank">📸 Instagram</a>
+  </div>
+  <small>© 2026 Rakhis by Payal. All rights reserved.</small>
+</footer>
+
+<script>
+const WA = "919537318541";
+const STORE_KEY = 'rbi_products_v2';
+let currentCat = 'all';
+
+const defaults = [
+  {id:'c1',cat:'couple',name:'Royal Kundan Set',desc:'Matching Bhaiya & Bhabhi set',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple1.jpeg'},
+  {id:'c2',cat:'couple',name:'Floral Thread Set',desc:'Handwoven silk thread pair',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple2.jpeg'},
+  {id:'c3',cat:'couple',name:'Pearl Elegance Set',desc:'Classic pearl & bead design',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple4.jpeg'},
+  {id:'c4',cat:'couple',name:'Marigold Weave',desc:'Vibrant marigold inspired',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple5.jpeg'},
+  {id:'c5',cat:'couple',name:'Meenakari Bloom',desc:'Traditional meenakari work',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple6.jpeg'},
+  {id:'c6',cat:'couple',name:'Golden Zardosi',desc:'Zardosi embroidered pair',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple7.jpeg'},
+  {id:'c7',cat:'couple',name:'Lotus Charm Set',desc:'Lotus motif couple rakhi',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple8.jpeg'},
+  {id:'c8',cat:'couple',name:'Pastel Tassels',desc:'Soft pastel tassel pair',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple9.jpeg'},
+  {id:'c9',cat:'couple',name:'Crimson Stone Set',desc:'Ruby-toned stone pair',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple10.jpeg'},
+  {id:'c10',cat:'couple',name:'Peacock Motif',desc:'Peacock feather design',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple11.jpeg'},
+  {id:'c11',cat:'couple',name:'Silver Filigree',desc:'Delicate silver work set',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple12.jpeg'},
+  {id:'c12',cat:'couple',name:'Boho Charm',desc:'Boho-styled couple rakhi',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple13.jpeg'},
+  {id:'c13',cat:'couple',name:'Mango Moti Set',desc:'Mango motif pearl set',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple14.jpeg'},
+  {id:'c14',cat:'couple',name:'Emerald Threads',desc:'Green stone thread pair',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple15.jpeg'},
+  {id:'c15',cat:'couple',name:'Classic Silk Set',desc:'Plain silk elegant pair',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple16.jpeg'},
+  {id:'c16',cat:'couple',name:'Antique Gold',desc:'Antique gold finish set',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple17.jpeg'},
+  {id:'c17',cat:'couple',name:'Blossom Duo',desc:'Floral blossom couple set',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple18.jpeg'},
+  {id:'c18',cat:'couple',name:'Sandalwood Set',desc:'Warm sandalwood tones',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple19.jpeg'},
+  {id:'c19',cat:'couple',name:'Ombre Waves',desc:'Gradient ombre pair',price:150,bulk:120,img:'https://rakhisbyisha.github.io/2026/images/couple20.jpeg'},
+  {id:'b1',cat:'bhai',name:'Rudraksh Bead',desc:'Rudraksh & thread rakhi',price:60,bulk:45,img:'https://rakhisbyisha.github.io/2026/images/bhai1.jpeg'},
+  {id:'b2',cat:'bhai',name:'Macho Bracelet',desc:'Stylish leather-look band',price:50,bulk:38,img:'https://rakhisbyisha.github.io/2026/images/bhai2.jpeg'},
+  {id:'b3',cat:'bhai',name:'Stone Charm',desc:'Bold stone centrepiece',price:50,bulk:38,img:'https://rakhisbyisha.github.io/2026/images/bhai3.jpeg'},
+  {id:'b4',cat:'bhai',name:'Triple Thread',desc:'Classic three-thread rakhi',price:55,bulk:42,img:'https://rakhisbyisha.github.io/2026/images/bhai4.jpeg'},
+  {id:'b5',cat:'bhai',name:'Metal Kada',desc:'Metal kada style rakhi',price:55,bulk:42,img:'https://rakhisbyisha.github.io/2026/images/bhai6.jpeg'},
+  {id:'bh1',cat:'bhabhi',name:'Lumba Classic',desc:'Traditional lumba',price:130,bulk:100,img:'https://rakhisbyisha.github.io/2026/images/bhabhi1.jpeg'},
+  {id:'bh2',cat:'bhabhi',name:'Kundan Lumba',desc:'Premium kundan lumba',price:200,bulk:165,img:'https://rakhisbyisha.github.io/2026/images/bhabhi2.jpeg'},
+  {id:'bh3',cat:'bhabhi',name:'Floral Lumba',desc:'Floral motif lumba',price:110,bulk:88,img:'https://rakhisbyisha.github.io/2026/images/bhabhi3.jpeg'},
+  {id:'bh4',cat:'bhabhi',name:'Pearl Lumba',desc:'Pearl studded lumba',price:110,bulk:88,img:'https://rakhisbyisha.github.io/2026/images/bhabhi4.jpeg'},
+  {id:'bh5',cat:'bhabhi',name:'Stone Lumba',desc:'Multi-stone lumba',price:110,bulk:88,img:'https://rakhisbyisha.github.io/2026/images/bhabhi5.jpeg'},
+  {id:'bh6',cat:'bhabhi',name:'Simple Lumba',desc:'Elegant minimalist lumba',price:80,bulk:65,img:'https://rakhisbyisha.github.io/2026/images/bhabhi6.jpeg'},
+  {id:'k1',cat:'kids',name:'Cartoon Charm',desc:'Fun cartoon character',price:70,bulk:55,img:'https://rakhisbyisha.github.io/2026/images/kids1.jpeg'},
+  {id:'k2',cat:'kids',name:'Candy Colors',desc:'Bright candy-color beads',price:60,bulk:48,img:'https://rakhisbyisha.github.io/2026/images/kids2.jpeg'},
+  {id:'k3',cat:'kids',name:'Superhero Set',desc:'Superhero themed',price:60,bulk:48,img:'https://rakhisbyisha.github.io/2026/images/kids3.jpeg'},
+  {id:'k4',cat:'kids',name:'Unicorn Bead',desc:'Unicorn & rainbow beads',price:60,bulk:48,img:'https://rakhisbyisha.github.io/2026/images/kids4.jpeg'},
+];
+
+function getProducts(){
+  try{ const d=localStorage.getItem(STORE_KEY); return d?JSON.parse(d):defaults; }
+  catch(e){ return defaults; }
+}
+
+function waLink(p){
+  return `https://wa.me/${WA}?text=${encodeURIComponent(`Hi Payal! I'd like to order:\n*${p.name}*\nPrice: ₹${p.price}\n\nPlease confirm availability 🙏`)}`;
+}
+
+function render(){
+  const products = getProducts();
+  ['couple','bhai','bhabhi','kids'].forEach(cat=>{
+    const grid = document.getElementById('grid-'+cat);
+    const items = products.filter(p=>p.cat===cat);
+    if(!items.length){ grid.innerHTML='<p class="empty">Coming soon...</p>'; return; }
+    grid.innerHTML = items.map(p=>`
+      <div class="card">
+        <div class="card-img">
+          <img src="${p.img}" alt="${p.name}" loading="lazy"
+            onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23F7E8D8%22 width=%22200%22 height=%22200%22/><text x=%2250%25%22 y=%2252%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2248%22>🪢</text></svg>'"/>
+        </div>
+        <div class="card-body">
+          <div class="card-name">${p.name}</div>
+          ${p.desc?`<div class="card-desc">${p.desc}</div>`:''}
+          <div class="price-row">
+            <span class="price">₹${p.price}</span>
+            ${p.bulk?`<span class="bulk-tag">₹${p.bulk} bulk</span>`:''}
+          </div>
+          <a class="wa-btn" href="${waLink(p)}" target="_blank">📲 Order on WhatsApp</a>
+        </div>
+      </div>
+    `).join('');
+  });
+  filterCat(currentCat);
+}
+
+function showCat(cat,el){
+  currentCat=cat;
+  document.querySelectorAll('.tabs a').forEach(a=>a.classList.remove('active'));
+  if(el) el.classList.add('active');
+  filterCat(cat);
+}
+function filterCat(cat){
+  ['couple','bhai','bhabhi','kids'].forEach(c=>{
+    document.getElementById('sec-'+c).style.display=(cat==='all'||cat===c)?'':'none';
+  });
+}
+
+function sendBulkOrder(){
+  const name=document.getElementById('b-name').value.trim();
+  const phone=document.getElementById('b-phone').value.trim();
+  const cat=document.getElementById('b-cat').value;
+  const qty=document.getElementById('b-qty').value;
+  const notes=document.getElementById('b-notes').value.trim();
+  if(!name||!phone||!cat||!qty){alert('Please fill in all required fields.');return;}
+  const msg=`Hi Payal! I'd like to place a BULK ORDER 🎊\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n🏷️ Category: ${cat}\n📦 Quantity: ${qty}\n📝 Notes: ${notes||'—'}\n\nKindly confirm pricing & availability 🙏`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`,'_blank');
+}
+
+render();
+// Refresh if admin made changes in another tab
+window.addEventListener('storage', e => { if(e.key===STORE_KEY) render(); });
+</script>
+</body>
+</html>
